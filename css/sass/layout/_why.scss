@@ -1,0 +1,50 @@
+.why {
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+  background-color: $LightGrayishBlue;
+  h2 {
+    color: $DarkBlue;
+    font-weight: normal;
+  }
+  p {
+    font-size: 14px;
+    color: $GrayishBlue;
+    line-height: 1.7;
+    font-weight: normal;
+    margin-bottom: 60px;
+  }
+  .cards {
+    margin-bottom: 30px;
+    .card {
+      background: none;
+      border: none;
+      padding: 0;
+      .icon {
+        width: 55px;
+        @media (max-width: 767px) {
+          margin: auto;
+        }
+      }
+      h5 {
+        color: $DarkBlue;
+        margin: 25px 0;
+        font-size: 22px;
+        font-weight: normal;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}

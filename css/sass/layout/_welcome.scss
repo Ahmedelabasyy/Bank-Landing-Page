@@ -1,0 +1,72 @@
+.next {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 57px);
+  background-color: $VeryLightGray;
+  padding-bottom: 50px;
+  .next-gen {
+    margin-top: 230px;
+    h1 {
+      color: $DarkBlue;
+      font-weight: normal;
+      font-size: 48px;
+    }
+    p {
+      color: $GrayishBlue;
+      line-height: 1.7;
+    }
+    @media (max-width: 767px) {
+      margin-top: 350px;
+    }
+  }
+  .next-img {
+    position: absolute;
+    top: -252px;
+    right: -44px;
+    .img-one {
+      position: absolute;
+      margin-bottom: 50px;
+      overflow: hidden;
+      @media (max-width: 767px) {
+        width: 1400px;
+      }
+      img {
+        @media (max-width: 767px) {
+          max-width: 100%;
+          width: 700px;
+        }
+      }
+    }
+
+    .img-two {
+      position: absolute;
+      right: 0;
+      margin-top: 110px;
+      width: 720px;
+      @media (max-width: 767px) {
+        width: 385px;
+        left: 40%;
+        margin-top: 85px;
+        padding: 30px;
+        left: calc(100vw / 2.5);
+      }
+      @media (max-width: 379px) {
+        padding: 40px;
+        left: calc(100vw / 3);
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 410px;
+        width: 500px;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 650px;
+        margin-top: 300px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      top: -210px;
+      right: 36%;
+    }
+  }
+}

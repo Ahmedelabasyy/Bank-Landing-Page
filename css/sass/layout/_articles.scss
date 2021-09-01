@@ -1,0 +1,49 @@
+.articles {
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+  background-color: $VeryLightGray;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  h2 {
+    color: $DarkBlue;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  .article {
+    margin-bottom: 40px;
+    .card {
+      .heigh {
+        height: 170.66px;
+      }
+      border: none;
+      .card-body {
+        h6 {
+          font-size: 10px;
+          color: #999 !important;
+          margin: 10px 0 !important;
+        }
+        h5 {
+          color: $DarkBlue;
+          font-size: 18px;
+          opacity: 0.94;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: rgba(100, 199, 100, 0.767);
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          color: #999;
+          line-height: 1.6;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

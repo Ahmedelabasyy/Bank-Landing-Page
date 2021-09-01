@@ -1,0 +1,35 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: -80px;
+  z-index: 999;
+  padding: 10px 2px;
+  border-radius: 5px;
+  background-color: $DarkBlue;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  i {
+    font-size: 35px;
+    color: $White;
+    -webkit-transform: rotate(269deg);
+    -moz-transform: rotate(269deg);
+    -o-transform: rotate(269deg);
+    transform: rotate(269deg);
+  }
+}
+
+.show {
+  bottom: 40px;
+}

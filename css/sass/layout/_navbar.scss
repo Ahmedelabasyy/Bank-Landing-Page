@@ -1,0 +1,56 @@
+header .navbar {
+  background-color: $LightGrayishBlue;
+  padding: 10px;
+  padding-bottom: 0;
+  background: $White;
+  .navbar-brand {
+    margin-top: -15px;
+  }
+  ul {
+    li {
+      a {
+        padding-bottom: 12px;
+        &:hover {
+          border-bottom: 1px solid #333;
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  button.main-button {
+    margin-bottom: 10px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    outline: 0;
+    span.menu {
+      background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+      width: 1.5rem;
+      height: 2px;
+      background-color: rgb(155, 154, 154);
+      display: block;
+      margin-bottom: 4px;
+      transition: all 0.2s ease-in-out;
+      &:nth-child(1).clicked {
+        transform: rotate(45deg) translate(4px, 2px);
+      }
+      &:nth-child(2).clicked {
+        display: none;
+      }
+      &:nth-child(3).clicked {
+        transform: rotate(-45deg) translate(2px, -1px);
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    background-color: $White !important;
+    padding: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+footer {
+  padding-top: $paddingTop;
+  padding-bottom: 40px;
+  background: $DarkBlue;
+  .foot {
+    margin-bottom: 20px;
+    h2 {
+      color: $White;
+      font-weight: bold;
+      font-size: 29px;
+      margin-bottom: 50px;
+    }
+    .links {
+      display: flex;
+      li {
+        margin-right: 20px;
+      }
+    }
+    .about {
+      color: #fff;
+      li {
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    }
+    p {
+      margin: 20px 0 0;
+      color: $GrayishBlue;
+    }
+    span {
+      color: $GrayishBlue;
+      font-size: 12px;
+    }
+  }
+}
